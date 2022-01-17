@@ -1,71 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-</head>
-<body>
-    <nav id="navbar">
-        <header> 
-            <h1></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Documentation for Beginners</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div id="full-container">
+      <nav id="navbar">
+        <header>
+          <h1>CSS Documentation for Beginners</h1>
         </header>
-        <a href="#TITLE" class="nav-link">TITLE</a>
-        <a href="#TITLE" class="nav-link">TITLE</a>
-        <a href="#TITLE" class="nav-link">TITLE</a>
-        <a href="#TITLE" class="nav-link">TITLE</a>
-        <a href="#TITLE" class="nav-link">TITLE</a>
-    </nav>
-    <main id="main-doc">
-        <section class="main-section" id="TITLE">
-            <header id="some_title5">TITLE</header>
-            <p></p>
-            <p></p>
-            <code></code>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Types_of_CSS" class="nav-link">Types of CSS</a>
+        <a href="#Anatomy_of_CSS_ruleset" class="nav-link"
+          >Anatomy of CSS ruleset</a
+        >
+        <a href="#Types_of_Selectors" class="nav-link">Types of Selectors</a>
+        <a href="#Box_Model" class="nav-link">Box Model</a>
+        <a href="#Fonts_and_Text" class="nav-link">Fonts and Text</a>
 
-            </ul>
-        </section>
-        <section class="main-section" id="TITLE">
-            <header id="some_title1">TITLE</header>
-            <p></p>
-            <p></p>
-            <code></code>
+        <footer>
+          <div id="developer-container">
+            <a href="https://github.com/adrianaluisadc"
+              >adrianaluisadc &copy; 2022</a
+            >
+          </div>
+        </footer>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header><h2>Introduction</h2></header>
 
-        </section>
-        <section class="main-section" id="TITLE">
-            <header id="some_title2">TITLE</header>
-            <p></p>
-            <p></p>
-            <code></code>
-            
-        </section>
-        <section class="main-section" id="TITLE">
-            <header id="some_title3">TITLE</header>
-            <p></p>
-            <p></p>
-            <code></code>
+          <p>
+            This documentation is a compilation of detailed information about
+            CSS targeted purposely for beginners like me who also wishes to
+            learn CSS. The content in this documentation are from different
+            reliable sources including Stack Overflow, Geeks for Geeks,
+            FreeCodeCamp and W3schools. It is explained in relatively simplier
+            ways so that even without prior knowledge (except for a little bit
+            of HTML) the learner will be able to grasp the topic. Moreover, the
+            writer behind this documentation serves this as a journal to write
+            important notes about CSS after discovering new ideas and lessons
+            while developing pages using CSS.
+          </p>
 
-        </section>
-        <section class="main-section" id="TITLE">
-            <header id="some_title4">TITLE</header>
-            <p></p>
-            <p></p>
-            <code></code>
+          <h3>What is CSS?</h3>
 
+          <p>
+            So what really is it?
+            <br>
+            For a little history trivia, it was developed by World Wide Web Consortium (W3C) and had
+            its initial release on December 17, 1996 (almost 24 years ago).
+            Today, CSS3 is the latest version of the CSS specification that
+            supports responsive layout.
+            <br>
+            But before we embark our journey in learning the basics of CSS, one thing I have to share first is that CSS is NOT a programming language.
+            <br>
+            Cascading Style Sheets or CSS is actually a style sheet language and
+            not a programming language because unlike the latter, CSS only let
+            you set styles for your HTML elements in the web pages, including
+            design, layout and display variations for various devices and screen
+            sizes but it DO NOT gives instruction and commands. In other words,
+            it does not program!
+            <br>
+          </p>
         </section>
+        <section class="main-section" id="Types_of_CSS">
+          <header><h2>Types of CSS</h2></header>
+          <p>
+            There are three ways to integrate CSS in the HTML file and they are:
+          </p>
+          <ul>
+            <li>Inline</li>
+            <li>Internal</li>
+            <li>External</li>
+          </ul>
 
-    </main>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+          <h3>Inline Styles</h3>
+          <p>
+            To make it simple, Inline CSS is when your are integrating a CSS
+            style <b>in the line</b> of your HTML document on a specific
+            element. If you have set a style in your Internal or External CSS
+            (these two will be discussed later), the inline CSS will override
+            them.
+          </p>
+          <p class="example">Example:</p>
+          <div class="code-containers">
+            <code
+              >&#60;h1 style="color: fuchsia"; font-weight: bolder;
+              text-decoration: underline&#62; This is an inline style
+              &#60;/h1&#62;</code
+            >
+          </div>
+
+          <p>
+            If we preview the HTML file with this inline css style on the Chrome
+            browser, this style will look like this:
+          </p>
+          <div class="samples-container">
+            <img
+              src="/images/inline-sample.png "
+              alt="Preview of an Inline CSS style in browser"
+            />
+          </div>
+        </section>
+        <section class="main-section" id="Anatomy_of_CSS_ruleset">
+          <header>Anatomy of CSS ruleset</header>
+          <p></p>
+          <p></p>
+          <code></code>
+        </section>
+        <section class="main-section" id="Types_of_Selectors">
+          <header>Types of Selectors</header>
+          <p></p>
+          <p></p>
+          <code></code>
+        </section>
+        <section class="main-section" id="Box_Model">
+          <header>Box Model</header>
+          <p></p>
+          <p></p>
+          <code></code>
+        </section>
+        <section class="main-section" id="Fonts_and_Text">
+          <header>Fonts and Text</header>
+          <p></p>
+          <p></p>
+          <code></code>
+        </section>
+      </main>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+  </body>
 </html>

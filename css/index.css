@@ -1,0 +1,44 @@
+#full-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#navbar {
+    width: 25%;
+    position: sticky;
+}
+footer {
+    width: 100%;
+}
+
+#main-doc {
+    width: 75%;
+    padding: 30px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+/* ----- TYPES OF CSS ------ */
+
+.code-containers{
+    margin: 20px auto;
+    width: 620px;
+    padding: 30px;
+    text-align:center;
+    background-color: bisque;
+}
+
+.samples-container{
+    text-align: center;
+    margin: 20px auto;
+}
