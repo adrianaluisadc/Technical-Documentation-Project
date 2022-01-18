@@ -53,21 +53,23 @@
 
           <p>
             So what really is it?
-            <br>
-            For a little history trivia, it was developed by World Wide Web Consortium (W3C) and had
-            its initial release on December 17, 1996 (almost 24 years ago).
-            Today, CSS3 is the latest version of the CSS specification that
-            supports responsive layout.
-            <br>
-            But before we embark our journey in learning the basics of CSS, one thing I have to share first is that CSS is NOT a programming language.
-            <br>
+            <br />
+            For a little history trivia, it was developed by World Wide Web
+            Consortium (W3C) and had its initial release on December 17, 1996
+            (almost 24 years ago). Today, CSS3 is the latest version of the CSS
+            specification that supports responsive layout.
+            <br />
+            But before we embark our journey in learning the basics of CSS, one
+            thing I have to share first is that CSS is NOT a programming
+            language.
+            <br />
             Cascading Style Sheets or CSS is actually a style sheet language and
             not a programming language because unlike the latter, CSS only let
             you set styles for your HTML elements in the web pages, including
             design, layout and display variations for various devices and screen
             sizes but it DO NOT gives instruction and commands. In other words,
             it does not program!
-            <br>
+            <br />
           </p>
         </section>
         <section class="main-section" id="Types_of_CSS">
@@ -91,8 +93,7 @@
           </p>
           <p class="example">Example:</p>
           <div class="code-containers">
-            <code
-              >&#60;h1 style="color: fuchsia"; font-weight: bolder;
+            <code>&#60;h1 style="color: fuchsia"; font-weight: bolder;
               text-decoration: underline&#62; This is an inline style
               &#60;/h1&#62;</code
             >
@@ -107,6 +108,31 @@
               src="/images/inline-sample.png "
               alt="Preview of an Inline CSS style in browser"
             />
+          </div>
+
+          <h3>Internal Styles</h3>
+          <p>
+            Internal CSS styles are styles inside the HTML file and it is easy
+            to identify them because they are enclosed within a style tag.
+            Internal style will only apply to the HTML document it is written.
+            It is suggested to put the style tag inside the head tag for HTML
+            validation rather than inside the body tag.
+          </p>
+          <p class="example">Example:</p>
+          <div class="code-containers">
+            <code>
+              &#60;head&#62;
+              <pre>  &#60;style&#62; </pre>
+              <pre>    h1 {</pre>
+              <pre>    color: green;</pre>
+              <pre>    font-family: Arial;</pre>
+              <pre>    }</pre>
+              <pre>  &#60;/style&#62;</pre>
+              <pre>&#60;/head&#62; </pre>
+              <pre>&#60;body&#62; </pre>
+              <pre>  &#60;h1&#62;This is an Internal Style!&#60;/h1&#62;</pre>
+              <pre>&#60;/body&#62;</pre>
+            </code>
           </div>
         </section>
         <section class="main-section" id="Anatomy_of_CSS_ruleset">

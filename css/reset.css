@@ -3,14 +3,18 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box; 
     color: rgb(238, 238, 238);
     background: rgb(26, 26, 26);
 }
 
+body{
 
-code {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+code, pre {
     color: black;
     background-color: transparent;
     font-family: monospace;
