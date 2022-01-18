@@ -20,11 +20,9 @@
         <a href="#Anatomy_of_CSS_ruleset" class="nav-link"
           >Anatomy of CSS ruleset</a
         >
-        <a href="#Types_of_Selectors" class="nav-link">Types of Selectors</a>
+        <a href="#Comments_in_CSS" class="nav-link">Comments in CSS</a>
         <a href="#Box_Model" class="nav-link">Box Model</a>
         <a href="#Fonts_and_Text" class="nav-link">Fonts and Text</a>
-
-        
       </nav>
       <main id="main-doc">
         <section class="main-section" id="Introduction">
@@ -87,7 +85,8 @@
           </p>
           <p class="example">Example:</p>
           <div class="code-containers">
-            <code>&#60;h1 style="color: fuchsia"; font-weight: bolder;
+            <code
+              >&#60;h1 style="color: fuchsia"; font-weight: bolder;
               text-decoration: underline&#62; This is an inline style
               &#60;/h1&#62;</code
             >
@@ -107,10 +106,10 @@
           <h3>Internal Styles</h3>
           <p>
             Internal CSS styles are styles inside the HTML file and it is easy
-            to identify them because they are enclosed within a &#60;style&#62; tag.
-            Internal style will only apply to the HTML document it is written.
-            It is suggested to put the style tag inside the head tag for HTML
-            validation rather than inside the body tag.
+            to identify them because they are enclosed within a &#60;style&#62;
+            tag. Internal style will only apply to the HTML document it is
+            written. It is suggested to put the style tag inside the head tag
+            for HTML validation rather than inside the body tag.
           </p>
           <p class="example">Example:</p>
           <div class="code-containers">
@@ -129,10 +128,7 @@
             </code>
           </div>
 
-          <p>
-            Here is the preview of the style in the Chrome
-            browser:
-          </p>
+          <p>Here is the preview of the style in the Chrome browser:</p>
           <div class="samples-container">
             <img
               src="/images/internal-sample.png "
@@ -142,7 +138,13 @@
 
           <h3>External Styles</h3>
           <p>
-            This type of style is recommended and highly suggested. This style can be added to your HTML file by utilizing the &#60;link&#62; tag to link a CSS file. The rel attribute of the link tag must be set to "stylesheet" and the href attribute to the stylesheet's relative or absolute path. In this scenario, the type attribute of the link element is not required. For the HTML to load the elements style first, you must place the link tag inside the head tag.
+            This type of style is recommended and highly suggested. This style
+            can be added to your HTML file by utilizing the &#60;link&#62; tag
+            to link a CSS file. The rel attribute of the link tag must be set to
+            "stylesheet" and the href attribute to the stylesheet's relative or
+            absolute path. In this scenario, the type attribute of the link
+            element is not required. For the HTML to load the elements style
+            first, you must place the link tag inside the head tag.
           </p>
           <p class="example">Example:</p>
           <p class="filetype">index.html</p>
@@ -152,13 +154,16 @@
               <pre>&#60;html&#62;</pre>
               <pre>  &#60;head&#62;</pre>
               <pre>    &#60;meta charset="utf-8"&#62;</pre>
-              <pre>    &#60;link rel="stylesheet" type="text/css" href="style.css"&#62; </pre>
+              <pre>
+    &#60;link rel="stylesheet" type="text/css" href="style.css"&#62; </pre
+              >
               <pre>  &#60;/head&#62; </pre>
               <pre>  &#60;body&#62; </pre>
-              <pre>    &#60;h1&#62;This is an External Style...&#60;/h1&#62;</pre>
+              <pre>
+    &#60;h1&#62;This is an External Style...&#60;/h1&#62;</pre
+              >
               <pre>  &#60;/body&#62;</pre>
               <pre>&#60;/html&#62;</pre>
-
             </code>
           </div>
           <p class="filetype">style.css</p>
@@ -173,9 +178,7 @@
             </code>
           </div>
 
-          <p>
-           The style will look like this in the browser:
-          </p>
+          <p>The style will look like this in the browser:</p>
           <div class="samples-container">
             <img
               src="/images/external-sample.png "
@@ -183,19 +186,67 @@
             />
           </div>
 
-          <p>Note: I have created a css file inside the same folder where the HTML file is. Keep in mind that you need to properly direct the link tag to the right path for it to find the CSS file.</p>
+          <p>
+            Note: I have created a css file inside the same folder where the
+            HTML file is. Keep in mind that you need to properly direct the link
+            tag to the right path for it to find the CSS file.
+          </p>
         </section>
         <section class="main-section" id="Anatomy_of_CSS_ruleset">
           <header><h2>Anatomy of CSS ruleset</h2></header>
-          <p>We'll look at the parts that make up the CSS as we know it on this topic. With no further ado,the rules of the CSS has three parts: <em>the selector, the property, and the value</em>.</p>
-          <p></p>
-          <code></code>
+          <p>
+            We'll look at the parts that make up the CSS as we know it on this
+            topic. With no further ado, the rules of the CSS has three parts:
+            <em>the selector, the property, and the value</em>.
+          </p>
+          <div class="samples-container">
+            <img src="/images/rulesets.jpg" alt="Rulesets of CSS" />
+          </div>
+          <h3>Selector</h3>
+          <p>The selector is a pointer to the HTML element you're styling.</p>
+          <p class="example">
+            Examples of selectors: h1, p, #idname, .classname, body, *, section,
+            main
+          </p>
+          <h3>Property</h3>
+          <p>
+            CSS properties styles the selector where it is nested. There are a
+            lot of CSS properties and you can check this
+            <a
+              href="http://web.simmons.edu/~grabiner/comm244/weekthree/css-basic-properties.html"
+              style="display: inline; color: indianred"
+              >link</a
+            >
+            to see a basic list of them.
+          </p>
+          <p class="example">
+            Examples of properties: color, text-decoration, display,
+            font-weight, background, line-heigh, margin
+          </p>
+
+          <h3>Value</h3>
+          <p>The value specifies a specific styling of the property.</p>
+          <p class="example">
+            Examples of properties with values: margin: auto, line-height: 1em,
+            color: #000, font-family: Arial
+          </p>
         </section>
-        <section class="main-section" id="Types_of_Selectors">
-          <header>Types of Selectors</header>
-          <p></p>
-          <p></p>
-          <code></code>
+        <section class="main-section" id="Comments_in_CSS">
+          <header><h2>Comments in CSS</h2></header>
+          <p>
+            Commenting in CSS is also important especially if you are working on
+            a big project. Comments would help you remember what the styles are
+            for and it helps you organize your css file.
+          </p>
+          <h3>Single Line Comment</h3>
+          <div class="code-containers">
+            <code>
+              <pre>/* A sample of single line comment*/</pre>
+              <pre>div {</pre>
+              <pre>  font-size: 1em; /* This is a single line comment */</pre>
+              <pre>}</pre>
+            </code>
+          </div>
         </section>
         <section class="main-section" id="Box_Model">
           <header>Box Model</header>
@@ -217,7 +268,7 @@
           </div>
         </footer>
       </main>
-      
+
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </div>
   </body>
