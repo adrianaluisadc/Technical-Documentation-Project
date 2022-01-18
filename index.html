@@ -258,16 +258,75 @@
         </section>
         <section class="main-section" id="Box_Model">
           <header><h2>Box Model</h2></header>
-          <p>Knowing box model is essential in layouting the webpage and it makes your web development easier. It serves as a guide to see where your element is placed on you web page. It also indicates a specific element's padding, border and margin. You can access the box model by going to the developer tools of your browser. In Google Chrome, you just need to right click your browser's page (the page of the HTML file) and then click the inspect button.</p>
+          <p>
+            Knowing box model is essential in layouting the webpage and it makes
+            your web development easier. It serves as a guide to see where your
+            element is placed on you web page. It also indicates a specific
+            element's padding, border and margin. You can access the box model
+            by going to the developer tools of your browser. In Google Chrome,
+            you just need to right click your browser's page (the page of the
+            HTML file) and then click the inspect button.
+          </p>
           <div class="samples-container">
-            <img style="width: 400px;" src="/images/boxmodel.png" alt="Box Model of CSS" />
+            <img
+              style="width: 400px"
+              src="/images/boxmodel.png"
+              alt="Box Model of CSS"
+            />
           </div>
         </section>
         <section class="main-section" id="Fonts_and_Text">
           <header><h2>Fonts and Text</h2></header>
-          <p>Font is probably my favorite part because fonts absolutely changes everything.</p>
-          <p></p>
-          <code></code>
+          <p>
+            Font is probably my favorite part because fonts absolutely changes
+            everything. In the contemporary days, web designers do not use the
+            "web-safe" fonts anymore. Implementing different fonts in your CSS
+            could be done by different ways including the @font-face and @import
+            rule.
+          </p>
+          <h3>@font-face rule</h3>
+          <p>In the @font-face rule, you just need to:</p>
+          <ol>
+            <li>Define a name for the font</li>
+            <li>Path the font file</li>
+          </ol>
+          <div class="code-containers">
+            <code>
+              <pre>@font-face {</pre>
+              <pre>    font-family: fontSampleName;</pre>
+              <pre>    src: url(font_title.woff);</pre>
+              <pre>}</pre>
+            </code>
+          </div>
+          <p>
+            To integrate the font with your element, write the font-family
+            property and its corresponding fontSampleName as its value.
+          </p>
+          <div class="code-containers">
+            <code>
+              <pre>body {</pre>
+              <pre>    font-family: fontSampleName;</pre>
+              <pre>}</pre>
+            </code>
+          </div>
+          <h3>@import rule</h3>
+          <p>
+            You can import the fonts in your CSS by just adding it on you CSS
+            file. I use <a href="https://fonts.google.com/">Google Fonts</a>to
+            find fonts because you can also just copy and paste on the CSS its
+            syntax on importation for a specific chosen font.
+          </p>
+          <div class="code-containers">
+            <code>
+              <pre>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');</pre
+              >
+              <pre>div {</pre>
+              <pre>    font-family: 'Roboto Slab', serif;</pre>
+              <pre>}</pre>
+            </code>
+          </div>
+
         </section>
         <footer>
           <div id="developer-container">
