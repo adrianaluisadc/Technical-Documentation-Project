@@ -24,13 +24,7 @@
         <a href="#Box_Model" class="nav-link">Box Model</a>
         <a href="#Fonts_and_Text" class="nav-link">Fonts and Text</a>
 
-        <footer>
-          <div id="developer-container">
-            <a href="https://github.com/adrianaluisadc"
-              >adrianaluisadc &copy; 2022</a
-            >
-          </div>
-        </footer>
+        
       </nav>
       <main id="main-doc">
         <section class="main-section" id="Introduction">
@@ -113,7 +107,7 @@
           <h3>Internal Styles</h3>
           <p>
             Internal CSS styles are styles inside the HTML file and it is easy
-            to identify them because they are enclosed within a style tag.
+            to identify them because they are enclosed within a &#60;style&#62; tag.
             Internal style will only apply to the HTML document it is written.
             It is suggested to put the style tag inside the head tag for HTML
             validation rather than inside the body tag.
@@ -134,10 +128,66 @@
               <pre>&#60;/body&#62;</pre>
             </code>
           </div>
+
+          <p>
+            Here is the preview of the style in the Chrome
+            browser:
+          </p>
+          <div class="samples-container">
+            <img
+              src="/images/internal-sample.png "
+              alt="Preview of an Internal CSS style in browser"
+            />
+          </div>
+
+          <h3>External Styles</h3>
+          <p>
+            This type of style is recommended and highly suggested. This style can be added to your HTML file by utilizing the &#60;link&#62; tag to link a CSS file. The rel attribute of the link tag must be set to "stylesheet" and the href attribute to the stylesheet's relative or absolute path. In this scenario, the type attribute of the link element is not required. For the HTML to load the elements style first, you must place the link tag inside the head tag.
+          </p>
+          <p class="example">Example:</p>
+          <p class="filetype">index.html</p>
+          <div class="code-containers">
+            <code>
+              &#60;!DOCTYPE html&#62;
+              <pre>&#60;html&#62;</pre>
+              <pre>  &#60;head&#62;</pre>
+              <pre>    &#60;meta charset="utf-8"&#62;</pre>
+              <pre>    &#60;link rel="stylesheet" type="text/css" href="style.css"&#62; </pre>
+              <pre>  &#60;/head&#62; </pre>
+              <pre>  &#60;body&#62; </pre>
+              <pre>    &#60;h1&#62;This is an External Style...&#60;/h1&#62;</pre>
+              <pre>  &#60;/body&#62;</pre>
+              <pre>&#60;/html&#62;</pre>
+
+            </code>
+          </div>
+          <p class="filetype">style.css</p>
+          <div class="code-containers">
+            <code>
+              <pre>h1 {</pre>
+              <pre>  color: blue;</pre>
+              <pre>  font-style: italic;</pre>
+              <pre>  font-weight: bolder;</pre>
+              <pre>  font-family: Impact;</pre>
+              <pre>}</pre>
+            </code>
+          </div>
+
+          <p>
+           The style will look like this in the browser:
+          </p>
+          <div class="samples-container">
+            <img
+              src="/images/external-sample.png "
+              alt="Preview of an Internal CSS style in browser"
+            />
+          </div>
+
+          <p>Note: I have created a css file inside the same folder where the HTML file is. Keep in mind that you need to properly direct the link tag to the right path for it to find the CSS file.</p>
         </section>
         <section class="main-section" id="Anatomy_of_CSS_ruleset">
-          <header>Anatomy of CSS ruleset</header>
-          <p></p>
+          <header><h2>Anatomy of CSS ruleset</h2></header>
+          <p>We'll look at the parts that make up the CSS as we know it on this topic. With no further ado,the rules of the CSS has three parts: <em>the selector, the property, and the value</em>.</p>
           <p></p>
           <code></code>
         </section>
@@ -159,7 +209,15 @@
           <p></p>
           <code></code>
         </section>
+        <footer>
+          <div id="developer-container">
+            <a href="https://github.com/adrianaluisadc"
+              >adrianaluisadc &copy; 2022</a
+            >
+          </div>
+        </footer>
       </main>
+      
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </div>
   </body>

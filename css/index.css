@@ -7,6 +7,11 @@
 #navbar {
     width: 25%;
     position: sticky;
+    text-align: center;
+    background: rgb(24, 27, 37);
+}
+.nav-link {
+    padding: 7px;
 }
 footer {
     width: 100%;
@@ -17,6 +22,7 @@ footer {
     padding: 30px;
     height: 100vh;
     overflow-y: scroll;
+    background: rgb(24, 24, 24);
 }
 
 a {
@@ -33,11 +39,16 @@ p {
 .code-containers{
     margin: 20px auto;
     width: 500px;
-    padding: 30px 60px;
+    padding: 30px 25px;
     background-color: bisque;
 }
 
 .samples-container{
     text-align: center;
     margin: 20px auto;
+}
+
+.filetype{
+    text-align: center;
+    font-weight: bold;
 }
