@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+#navbar h1 {
+    font-size: 1.6em;
+    margin: 10px 5px;
+}
+
 #navbar {
     width: 25%;
     position: sticky;
@@ -13,13 +18,20 @@
 .nav-link {
     padding: 7px;
 }
+
+.nav-link:hover{
+    color: fuchsia;
+}
 footer {
     width: 100%;
+    margin-top: 100px;
+    text-align: center;
+
 }
 
 #main-doc {
     width: 75%;
-    padding: 30px;
+    padding: 20px 80px;
     height: 100vh;
     overflow-y: scroll;
     background: rgb(24, 24, 24);
@@ -51,4 +63,22 @@ p {
 .filetype{
     text-align: center;
     font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px auto;
+}
+
+h3 {
+    margin: 10px auto;
+}
+
+ul, ol {
+    padding-left: 150px;
+    padding-top: 10px;
+}
+
+#Anatomy_of_CSS_ruleset img, #Types_of_CSS img {
+width: 320px;
 }
